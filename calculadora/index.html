@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css">
+    <meta charset="utf-8">
+    <title>Calculadora</title>
+  </head>
+  <body>
+    <style>
+    body{
+      text-align: center;
+      background-color: #80deea ;
+      margin-left: 40%;
+      margin-right: 40%;
+      color: #e65100;
+    }
+    </style>
+
+<h3> Calculo de Movimento Circular Uniforme</h3>
+<p>Raio de curvatura da trajetória em metros:</p> <input type="number" id ="rct" value=""><br>
+<p>Velocidade angular em radianos por segundo:</p> <input type="number" id ="va" value=""><br>
+<button onclick="myFunction()">Calcular</button>
+<script>
+function myFunction() {
+ var x = document.getElementById("rct").value;
+  var y = document.getElementById("va").value;
+    var Sf = x * y;
+   alert("Velocidade: " + Sf + "m/s");
+}
+</script>
+
+
+  </body>
+</html>
